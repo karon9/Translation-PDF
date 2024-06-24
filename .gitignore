@@ -1,0 +1,12 @@
+data/
+test/
+.env
+*.sh
+*.pdf
+.vscode/
+old/
+__pycache__/
+.venv/
+*.egg-info/
+dist/
+build/

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "translate_pdf"
+version = "0.1.0"
+description = "A package for translating PDF files"
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.6"
+dynamic = ["dependencies"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.setuptools.packages]
+find = {namespaces = false}
+
+[tool.setuptools.package-data]
+translate_pdf = ["fonts/*"]
+
+[project.scripts]
+translate_pdf = "translate_pdf.scripts.translate_pdf:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
