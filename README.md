@@ -11,7 +11,7 @@ pip install -i https://test.pypi.org/simple/ translate-pdf
 
 This will install the tool and all its dependencies on your system.
 
-### Step 3: Download the translation models
+### Step 2: Download the translation models
 
 ```bash
 spacy download en_core_web_sm
