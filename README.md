@@ -6,7 +6,7 @@ To install the tool, you need to have Python installed on your system. You can d
 ### Step 1: Install the tool
 
 ```bash
-pip install -i https://test.pypi.org/simple/ translate-pdf
+pip install .
 ```
 
 This will install the tool and all its dependencies on your system.
